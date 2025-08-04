@@ -1,0 +1,16 @@
+1. Form - action/method/names
+2. Action.php -
+  -> Save Date in Vars POST/GET
+	-> $varname = $POST['fieldname'];
+  -> Connection of DB
+	-> include/config.php
+  -> Save my Querry in SQL var 
+	-> $sql = "SQL QUERRY";
+	-> INSERT INTO `tabname` (`colname`,``,``,)
+	   VALUES ('{@val}');
+  -> $run = mysqli_querry($con,$sql) or die();
+  -> close datebase 
+	-> $con->close();
+	-> mysqli_close($con);
+
+

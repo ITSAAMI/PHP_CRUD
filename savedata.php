@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 
 // save other page/form data in vars 
 $stu_name = $_POST['sname'];
@@ -14,10 +15,15 @@ include 'include/config.php';
 $sql = "INSERT INTO `student`(`sname`, `saddress`, `sclass`, `sphone`) VALUES ('{$stu_name}','{$stu_address}','{$stu_class}','{$stu_phone}')";
 
 
-$result = mysqli_query($con,$sql) or die("Query Unsuccessful.");
+$result = mysqli_query($con, $sql) or die("Query Unsuccessful.");
+
+
 
 header("location: http://localhost/crud_html/index.php");
 
-$con->close();
+// $con->close();
+
+
+mysqli_close($con);
 
 ?>
